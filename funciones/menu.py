@@ -34,4 +34,4 @@ print(azul, "   ║", " 16 -", amarillo, "Ejercicio 16", azul, "║  17 -", amar
 print(azul, "   ╠══════════════════════╩══════════════════════╩══════════════════════╣")
 print(azul, "   ║", rojo ,"                           0 -", amarillo, "Salir                           ", azul, "║")
 print(azul, "   ╚════════════════════════════════════════════════════════════════════╝")
-# seleccion = input(verde + "\nPor favor, elige una opción: " + reset)
+seleccion = input(verde + "\nPor favor, elige una opción: " + reset)
