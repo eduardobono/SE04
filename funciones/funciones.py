@@ -7,6 +7,7 @@
 import math
 #FUNCIONES
 
+
 # Suma
 def suma(a, b):
     c = a + b
@@ -46,3 +47,28 @@ def area(a):
 def iva(a):
     c = a * 1.21
     return c
+
+# Detectar si un dia es laborable
+def laborable(dia):
+    # variables
+    laborable = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+    festivos = ["sabado", "domingo"]
+
+    if (list(filter(lambda x: dia in x, laborable))):
+        result = "es un dia laboral"
+    elif (list(filter(lambda x: dia in x, festivos))):
+        result = "es un dia festivo"
+    else:
+        result = "no es un dia valido"
+    return result
+
+# Detectar contraseña valida
+def passwd(a):
+    # variables
+    password = "contrasenya"
+    if (password == a):
+        result = 1
+    else:
+        result = 0
+
+    return result
