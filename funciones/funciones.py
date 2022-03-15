@@ -28,6 +28,11 @@ def division(a, b):
     c = a / b
     return c
 
+# Potencia
+def potencia(a, b):
+    c = a ^ b
+    return c
+
 # Modulo
 def modulo (a, b):
     c = a % b
@@ -66,9 +71,42 @@ def laborable(dia):
 def passwd(a):
     # variables
     password = "contrasenya"
+
     if (password == a):
         result = 1
     else:
         result = 0
 
     return result
+
+# comprobacion operador ejercicio 18
+def comprobacion(a):
+    # variables
+    operadores = ["+", "-", "*", "/", "^", "%"]
+    if a in operadores:
+        c = 1
+    else:
+        c = 0
+
+    return c
+
+# operaciones ejercicio 18
+def operaciones(a, b, c):
+    # variables
+    result = 0
+
+    if c == "+":
+        result = suma(a, b)
+    elif c == "-":
+        result = resta(a, b)
+    elif c == "*":
+        result = multiplicacion(a, b)
+    elif c == "/":
+        result = division(a, b)
+    elif c == "^":
+        result = potencia(a, b)
+    elif c == "%":
+        result = modulo(a, b)
+
+    return result
+
